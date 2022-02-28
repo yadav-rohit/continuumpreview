@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/continuumpreview/static/css/main.c4062d65.css",
+    "main.js": "/continuumpreview/static/js/main.27e36064.js",
+    "static/js/787.35789345.chunk.js": "/continuumpreview/static/js/787.35789345.chunk.js",
+    "static/media/Authentication.jpg": "/continuumpreview/static/media/Authentication.6c7f8e134547cb4badef.jpg",
+    "static/media/Wallet.jpg": "/continuumpreview/static/media/Wallet.550a8338e800ffced154.jpg",
+    "static/media/SmartContract.jpg": "/continuumpreview/static/media/SmartContract.5a94cfc151a9ccc30e66.jpg",
+    "static/media/matic-logo.png": "/continuumpreview/static/media/matic-logo.1140771b39c8269a6d1b.png",
+    "static/media/logo.png": "/continuumpreview/static/media/logo.f8c9a8a052ada2fa0d98.png",
+    "static/media/Timer.jpg": "/continuumpreview/static/media/Timer.ad8928ecd41414c654b4.jpg",
+    "index.html": "/continuumpreview/index.html",
+    "main.c4062d65.css.map": "/continuumpreview/static/css/main.c4062d65.css.map",
+    "main.27e36064.js.map": "/continuumpreview/static/js/main.27e36064.js.map",
+    "787.35789345.chunk.js.map": "/continuumpreview/static/js/787.35789345.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c4062d65.css",
+    "static/js/main.27e36064.js"
+  ]
+}
