@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import logo from '../assets/image/logo.png';
 import transactionContext from '../context/transactionCntxt';
 import Dpage from './Dpage';
+import {
+    HashRouter,
+} from "react-router-dom";
 
 
 
@@ -38,6 +41,7 @@ function Header() {
    }
 },[currentAccount])
   return (
+    <HashRouter>
     <div className={style.Navbar}>
         <div className={style.navlogo}>
             {/* just kept logo for refrence */}
@@ -70,6 +74,7 @@ function Header() {
             </div>
         </div>
     </div>
+    </HashRouter>
   )
   }
 
