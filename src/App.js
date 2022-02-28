@@ -26,7 +26,7 @@ function App() {
     <TransactionState>
     <div className="flex flex-col md:min-h-screen  overflow-hidden  font-medium  bg-[#000000]">
       <p> Hello</p>
-      <BrowserRouter basename="https://yadav-rohit.github.io/continuumpreview/">
+      <HashRouter basename="https://yadav-rohit.github.io/continuumpreview/">
       <Header/>
       <Routes>  
       <Route exact path="/" element={<Main/>} />
@@ -36,7 +36,7 @@ function App() {
       <Route exact path="/Contact" element={<Contact/>} />
       <Route exact path="/WithDraw" element={<WithDraw/>} />
       </Routes>
-      </BrowserRouter>
+      </HashRouter>
      <Footer/>
     </div>
     </TransactionState>
