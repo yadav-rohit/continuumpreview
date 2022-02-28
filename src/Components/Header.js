@@ -49,7 +49,7 @@ function Header() {
         </div>
         <div className={style.navlist}>
             <div className={style.navitems}>
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
                 </div>
             <div className={style.navitems}>
             <Link to="/About">About</Link>
