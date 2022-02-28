@@ -1,0 +1,373 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ZEN MODDERS HEADER animation */
+.container
+{
+  display: block;
+  text-align: center;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  position: absolute;
+  width: fit-content;
+
+}
+.container1
+{
+  display: block;
+}
+.container span
+{
+  display: block;
+}
+.text1
+{
+  font-size: 2rem;
+  font-family: 'Cormorant', serif;
+  font-weight: 900;
+  /* margin-bottom: 5px; */
+  letter-spacing: 8px;
+  position: relative;
+  animation: text 2.5s 1;
+  color: #ffffff;
+  background-color: rgb(0, 0, 0);
+}
+.text2
+{
+  font-size: 1rem;
+  font-family: 'Cormorant', serif;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+@keyframes text
+{
+   0%
+   {
+     color: black;
+     margin-bottom: -1.2rem;
+   }
+   30%
+   {
+     letter-spacing: 25px;
+      margin-bottom: -1.2rem;
+   }
+   85%
+   {
+     letter-spacing: 8px;
+      margin-bottom: -1.2rem;
+   }
+}
+
+
+/* ?input code */
+.inputs{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	max-width: 400px;
+	/* margin: 0 auto; */
+	padding: 1.4rem 2rem 1.6rem;
+	background: rgba(57, 63, 84, 0.8);
+  }
+  .inputs:after{
+	content: "";
+	position: absolute;
+	left: 5%;
+	right: 5%;
+	bottom: 0px;
+	z-index: 999;
+	height: 2px;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+	background-position: 0% 0%;
+	background: linear-gradient(
+	  to right,
+	  #b294ff,
+	  #57e6e6,
+	  #feffb8,
+	  #57e6e6,
+	  #b294ff,
+	  #57e6e6
+	);
+	background-size: 500% auto;
+	animation: gradient 3s linear infinite;
+	width: 90%;
+  }
+  .inputs input{
+	flex-grow: 1;
+	color: #bfd2ff;
+	font-size: 1.8rem;
+	line-height: 2.4rem;
+	vertical-align: middle;
+	background: transparent;
+  }
+  
+  
+  @keyframes gradient {
+	0% {
+	  background-position: 0 0;
+	}
+	100% {
+	  background-position: 100% 0;
+	}
+  }
+  
+  input:focus, textarea:focus, select:focus{
+	outline: none;
+  }
+  
+  /* ?payment button */
+  .paymentbutton{
+	background: linear-gradient(
+	  to right,
+	  #b294ff,
+	  #57e6e6,
+	  #feffb8,
+	  #57e6e6,
+	  #b294ff,
+	  #57e6e6
+	);
+   background-size: 400% 400%;
+   animation: gradient 5s ease infinite;
+  }
+
+/* ?Donation Page */
+.donowrapper{
+	position: absolute;
+	
+	width: 100%;
+	height: 100vh;
+	z-index: 5;
+	background-color: rgb(0, 0, 0);
+  }
+  
+  /* ?PayArea Code */
+  .payArea{
+	background-color: rgb(0, 0, 0);
+  }
+  
+  /* ?paymentmenu properties */
+  .paymentmenu {
+	
+  }
+
+/* ?Cliped background text */
+.bgclip{
+	background-image: linear-gradient(45deg, #e82d3b, #ee7752, #fda851);
+	background-size: 200% 200%;
+	/* animation: gradient 5s ease infinite; */
+	background-clip: text;
+   -webkit-background-clip: text;
+   color: transparent;
+   
+  }
+
+  
+
+/* ? cause card */
+/* ?donation card */
+.cardview{
+	color: white;
+	padding: 8px;
+	background: linear-gradient(25deg, rgba(253,168,81,1) 0%, rgb(255, 64, 77,1) 32%, rgba(97,105,160,1) 81%, rgba(21, 139, 198, 1) 90%, rgba(0, 213, 255, 1) 100%);
+	background-size: 200% 200%;
+  }
+  
+
+
+
+/* ?Css For animation in button*/
+.bganimation {
+	background: linear-gradient(-45deg, #E82D3B ,#ee7752,  #FDA851);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+}
+
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/* //?footer design */
+.footer{
+  background: linear-gradient(25deg, rgba(253,168,81,1) 0%, rgb(255, 64, 77,1) 32%, rgba(97,105,160,1) 81%, rgba(21, 139, 198, 1) 90%, rgba(0, 213, 255, 1) 100%);
+  background-size: 200% 200%;
+	animation: gradient 5s ease infinite;
+}
+
+
+/* ?button animation */
+.buttonanim{
+  background:  linear-gradient(45deg, rgb(255, 255, 255) 0%, rgb(185, 185, 185) 45%, rgba(255,255,255,1) 100%);
+   background-size: 400% 400%;
+   animation: gradient 5s ease infinite;
+  }
+
+
+
+  .contactheading {
+    position: relative;
+    text-align: center;
+    /* font-size: 2.5rem; */
+  }
+  
+  .reg {
+    position: relative;
+    display: flex;
+    /* border: 2px solid red; */
+    height: 73vh;
+    width: 45vw;
+    margin: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .contactusinfo {
+    width: 175%;
+    height: 52%;
+    /* margin: 10%; */
+    /* position: absolute; */
+    background-color: black;
+    color: white;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-bottom: 2px solid white;
+    transition: .4s all;
+  }
+  
+  .contactusinfo:focus{
+    width: 190%;
+    height: 65%;
+  }
+  
+  .contactusinfo2 {
+    width: 175%;
+    height: 52%;
+    background-color: black;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: .4s all;
+  }
+  
+  .contactusinfo2:hover{
+    background-color: white;
+    color: black;
+  }
+  
+  .inputPara {
+    position: relative;
+    width: 20%;
+    height: 10%;
+    margin: auto 15%;
+    /* border: 2px solid; */
+    font-size: 1.4rem;
+    font-weight: 550;
+  }
+  
+  #sub {
+    position: relative;
+    display: inline-block;
+    margin: auto;
+    /* border: 2px solid green; */
+    /* background-color: rebeccapurple; */
+    background-image: linear-gradient(90deg, #e82d3b, #fda851);
+    width: 46%;
+    height: 8%;
+    border-radius: 100px;
+  }
+  
+  .contactusinfo3 {
+    position: relative;
+    width: 97%;
+    height: 94%;
+    margin: 0.5% 1% 0.5% 1.5%;
+    /* background-color: black; */
+    background-image: linear-gradient(90deg, black, black);
+    border: 0;
+    border-radius: 100px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: .6s all;
+  }
+  
+  .contactusinfo3:hover {
+    background-image: linear-gradient(90deg, #e82d3b, #fda851);
+  }
+  
+  .contact {
+    text-align: center;
+    margin-bottom: 3%;
+    margin-top: 2%;
+  }
+  
+  .TeamCard{
+    /* padding: 60px 30px; */
+    /* margin: 20px; */
+    background: #151515;
+    border-radius: 20px;
+ }
+ .TeamCard:hover
+ {
+   box-shadow: 0.6em 0.6em 1.2em rgb(93, 93, 238),
+               -0.5em -0.5em 1em rgb(243, 61, 61);
+ }
+ .TeamCardcontent{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ }
+ .TeamCardcontent .links{
+     color: #6c758f;
+     margin-top: 20px;
+ }
+ .TeamCardcontent .links a{
+     text-decoration: none;
+     color: #6c758f;
+     font-size: 30px;
+     margin: 10px;
+     transition: color 0.4s;
+ }
+ .TeamCardcontent .links a:hover{
+     color: #0196e3;
+ }
+ .js-tilt-glare
+ {
+   border-radius: 20px;
+ }
+ 
+ .TeamCardimgBx{
+     width: 180px;
+     /* height: 250px; */
+     /* border-radius: 50%; */
+     position: relative;
+     margin-bottom: 20px;
+     /* overflow: hidden; */
+ }
+ .TeamCardcontentBx h4{
+     color: #5902EC;
+     font-size: 1.7rem;
+     font-weight: bold;
+     text-align: center;
+     letter-spacing: 1px;
+ }
+ .TeamCardcontentBx h5{
+     color: #6c758f;
+     font-size: 1.2rem;
+     font-weight: bold;
+     text-align: center;
+ }
