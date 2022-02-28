@@ -32,6 +32,7 @@ function HelpsSection() {
           <div className={style.headingcontent}>Donate To</div>
         </div>
         <div className={style.cardsview}>
+          <CausesCard />
           {causes.map((Cause) => (
             <CausesCard
               key={Cause._id}
@@ -46,12 +47,27 @@ function HelpsSection() {
           ))}
         </div>
       </div>
+
+      {/* Display only Code */}
+      <div className={`topdonnorview  ${style.topdonors}`}>
+          <div className={`bganimation ${style.toptitle}`}>
+            <div className={`${style.toptitletext}`}>Top Donnors</div>
+          </div>
+          <div className={style.donnorscardarea}></div>
+      <TopDonnorCard 
+             key="d1"
+             name= "Rohit"
+             transactionHash="0x204cb72bb695f727aaa1ec6fe8bd72161f46f73085ed7a0eecb9271161ab1f00"
+             transactionTo="Save NAB"
+             transactionAmount="2.1"/>
+                 </div>
       {donos && (
         <div className={`topdonnorview  ${style.topdonors}`}>
           <div className={`bganimation ${style.toptitle}`}>
             <div className={`${style.toptitletext}`}>Top Donnors</div>
           </div>
           <div className={style.donnorscardarea}>
+         
             {donos.map((donationn) => (
               <TopDonnorCard
                 key={donationn._id}

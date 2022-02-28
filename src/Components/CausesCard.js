@@ -60,7 +60,7 @@ const  Hello= (props) => {
     console.log(stat); 
     return stat;
   });
- navigate('#/DonationPage');
+ navigate('/DonationPage');
 }
 else{
     alert("connect MetaMaks Before Making Payment");
@@ -77,7 +77,7 @@ else{
             </div>
         </div>
         <div className={style.causeViewerImage}>
-            <img className={style.causeimage} src={props.image} alt="Image" />
+            <img className={style.causeimage} src="https://cimages.milaap.org/milaap/image/upload/c_fill,g_faces,h_452,w_603/v1590571972/production/images/campaign/177706/NAB2_hrkxtp_1590572167.jpg" alt="Image" />
         </div>
         <div className={style.causeViewerDescription}>
         National Association for the Blind (NAB) Delhi, a National Award-winning NGO,
@@ -102,7 +102,7 @@ else{
         <div className={style.title}>HELP SAVE NAB</div>
         <div className={style.imagebox}>
 
-        <img src={props.image} className={style.image}/>
+        <img src="https://cimages.milaap.org/milaap/image/upload/c_fill,g_faces,h_452,w_603/v1590571972/production/images/campaign/177706/NAB2_hrkxtp_1590572167.jpg" className={style.image}/>
         </div>
         <div className={style.description}>
         National Association for the Blind (NAB) Delhi, a National Award-winning NGO,
