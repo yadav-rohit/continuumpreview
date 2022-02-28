@@ -41,7 +41,6 @@ function Header() {
    }
 },[currentAccount])
   return (
-    <HashRouter>
     <div className={style.Navbar}>
         <div className={style.navlogo}>
             {/* just kept logo for refrence */}
@@ -50,7 +49,7 @@ function Header() {
         </div>
         <div className={style.navlist}>
             <div className={style.navitems}>
-            <Link to="/">Home</Link>
+            <a href="/">Home</a>
                 </div>
             <div className={style.navitems}>
             <Link to="/About">About</Link>
@@ -74,7 +73,6 @@ function Header() {
             </div>
         </div>
     </div>
-    </HashRouter>
   )
   }
 

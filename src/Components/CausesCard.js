@@ -1,6 +1,6 @@
 import React , {useState , useEffect, useContext} from 'react'
 import image from '../assets/image/logo.png';
-import {useNavigate} from 'react-router-dom';
+import {useHistory} from 'react-router-dom';
 import { AiFillCloseCircle } from 'react-icons/ai';
 import transactionContext from '../context/transactionCntxt';
 
@@ -38,7 +38,7 @@ const  Hello= (props) => {
             setview("hidden");
            }
    }
-   const navigate = useNavigate();
+   let history = useHistory();
 
 
 
@@ -60,7 +60,7 @@ const  Hello= (props) => {
     console.log(stat); 
     return stat;
   });
- navigate('/DonationPage');
+  history.push("/DonationPage");
 }
 else{
     alert("connect MetaMaks Before Making Payment");
