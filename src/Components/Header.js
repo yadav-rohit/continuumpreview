@@ -46,18 +46,18 @@ function Header() {
         </div>
         <div className={style.navlist}>
             <div className={style.navitems}>
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
                 </div>
             <div className={style.navitems}>
-            <a href="/About">About</a>
+            <Link to="/About">About</Link>
                 </div>
             <div className={style.navitems}>
-                <a href="/Helper">Want To Help ?</a>
+                <Link to="/Helper">Want To Help ?</Link>
                 </div>
             <div className={style.navitems}>
                 <div className={`bganimation ${style.connectusbtn}`} >
                     <div className={style.cnctustext}>
-                     <a href="/Contact" > Connect with us </a>
+                     <Link to="/Contact" > Connect with us </Link>
                     </div>
                 </div>
             </div>
